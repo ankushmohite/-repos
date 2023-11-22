@@ -10,9 +10,10 @@ stages {
 
 		stage ("httpd"){
 			steps {
-		               sh "yum install httpd -y"
-                               sh "cp -r index.html /var/www/html"
-                               sh "chmod -R 777 /var/www/html/"
+		               sh "sudo yum install httpd -y"
+			       sh "sudo service httpd start"
+                               sh "sudo cp -r index.html /var/www/html"
+                               sh "sudo chmod -R 777 /var/www/html/"
 			}
 		
 		}
