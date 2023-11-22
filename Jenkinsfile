@@ -2,7 +2,7 @@ pipeline {
 agent{
 label{
 		label "httpd"
-		customWorkspace "/mnt/vel-app"
+		customWorkspace "/mnt/directory"
 }
 }
 
